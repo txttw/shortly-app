@@ -40,7 +40,7 @@ export default function LiveAnalytics({
   const [loading, setLoading] = useState(true);
   const [listId, setListId] = useState(1);
   const navigate = useNavigate();
-  const socketUrl = `ws://live.shortly.txttw.online/websocket?token=${token}`;
+  const socketUrl = `${import.meta.env.VITE_LIVE_ANALYTICS_URL}?token=${token}`;
 
   /*const {
     sendMessage,
