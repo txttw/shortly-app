@@ -29,6 +29,7 @@ export const login = async ({
         "Content-Type": "application/json",
       },
       method: "POST",
+      credentials: "include",
       body: JSON.stringify({ username: username, password }),
     });
     if (res.ok) {

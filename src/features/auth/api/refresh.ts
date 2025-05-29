@@ -11,6 +11,7 @@ export const refresh = async (refreshToken: string): Promise<AuthUser> => {
         "Content-Type": "application/json",
       },
       method: "POST",
+      credentials: "include",
       body: JSON.stringify({ refresh: refreshToken }),
     });
     if (res.ok) {

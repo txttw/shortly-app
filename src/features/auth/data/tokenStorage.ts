@@ -11,10 +11,6 @@ abstract class TokenStorageBase {
   }
 }
 
-export class TokenStorage extends TokenStorageBase {
-  protected key = "token";
-}
-
 export class RefreshTokenStorage extends TokenStorageBase {
   protected key = "refresh";
 }

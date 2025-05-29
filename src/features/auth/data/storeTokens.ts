@@ -1,7 +1,9 @@
 import { AuthUser } from "../../../models/AuthUser";
-import { RefreshTokenStorage, TokenStorage } from "./tokenStorage";
+import { store } from "../../../store";
+import { setAuthUser } from "../store/authUserSlice";
+import { RefreshTokenStorage } from "./tokenStorage";
 
 export const storeTokens = (authUser: AuthUser) => {
-  new TokenStorage().set(authUser.token!);
   new RefreshTokenStorage().set(authUser.refresh!);
+  store.dispatch(setAuthUser(authUser));
 };

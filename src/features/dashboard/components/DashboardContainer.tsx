@@ -20,6 +20,7 @@ export default function DashboardContainer() {
     () => filterMenuByPermissions(dashboardMenuItems, user),
     [user]
   );
+
   return (
     <>
       <ResponsiveAppBar menuItems={allowedMenuItems} maxWidth={false} />
