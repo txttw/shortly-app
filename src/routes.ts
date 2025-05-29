@@ -1,0 +1,15 @@
+export enum RouteNames {
+  Login = "/login",
+  Logut = "/logout",
+  Dashboard = "/dashboard",
+  Users = "/dashboard/users",
+  UserCreate = "/dashboard/users/create",
+  UserEdit = "/dashboard/users/:id/edit",
+  Links = "/dashboard/links",
+  LinkCreate = "/dashboard/links/create",
+  LinkEdit = "/dashboard/links/:id/edit",
+  Analytics = "/dashboard/analytics",
+  AnalyticsLinkStats = "/dashboard/analytics/links/:id/statistics",
+  AnalyticsLive = "/dashboard/analytics-live",
+  Page404 = "/404",
+}

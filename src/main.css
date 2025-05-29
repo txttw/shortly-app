@@ -1,0 +1,38 @@
+
+.MuiButton-root {
+  border-radius: 50px !important;
+  text-transform: capitalize !important;
+}
+
+.p-list-item {
+  font-size: 0.85rem;
+}
+
+.center-h-v {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+
+a.app-link {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.search-bar-border {
+  border: 1px solid rgba(0, 0, 0, 0.23)
+}
+
+@keyframes kf-highlight {
+  0% {background-color: rgba(25, 118, 210, 0.08); }
+  100% { background-color: inherit; }
+}
+
+.highlight {
+  animation: kf-highlight 4s
+}
