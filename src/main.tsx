@@ -6,7 +6,7 @@ import "./main.css";
 import { ThemeProvider } from "@mui/material/styles";
 import { DefaultThem } from "./data/theme";
 import LoginPage from "./pages/login";
-import ImageBackgroundLayout from "./features/auth/layouts/ImageBackgroundLayout";
+import ImageBackgroundLayout from "./layouts/ImageBackgroundLayout";
 import { CssBaseline } from "@mui/material";
 
 import AuthenticatedRoutes from "./AuthenticatedRoutes";

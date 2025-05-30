@@ -1,9 +1,0 @@
-
-.login-background-image {
-  background-image:
-    linear-gradient(90deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-    url('/images/pexels-steve-1550564_opt.jpg');
-  min-height: 100vh;
-  min-width: 100vw;
-  height: 100%;
-}
