@@ -24,6 +24,7 @@ import AnalyticsPage from "./pages/dashboard/analytics/list";
 import AnalyticsLivePage from "./pages/dashboard/analytics-live/list";
 import Dashboard from "./pages/dashboard";
 import AnalyticsLinkStatsPage from "./pages/dashboard/analytics/linkStats";
+import Page404 from "./pages/404";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -54,6 +55,9 @@ createRoot(document.getElementById("root")!).render(
               <Route element={<ImageBackgroundLayout />}>
                 <Route path="login" element={<LoginPage />} />
               </Route>
+            </Route>
+            <Route element={<ImageBackgroundLayout />}>
+              <Route path="*" element={<Page404 />} />
             </Route>
           </Routes>
         </BrowserRouter>
