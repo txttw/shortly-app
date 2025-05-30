@@ -1,6 +1,5 @@
 import { Outlet } from "react-router";
 import { Container, useMediaQuery, useTheme } from "@mui/material";
-import "./css/layout.css";
 
 export default function ImageBackgroundLayout() {
   const theme = useTheme();
